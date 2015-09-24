@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Lab_3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If You Were A Giraffe..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EoS-9f-ey0">
+                                <rect key="frame" x="37" y="28" width="231" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="231" id="Xyi-rg-HcI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Tall Would You Be?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oh9-Ym-F4P">
+                                <rect key="frame" x="102" y="57" width="230" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="230" id="JLw-03-GEw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Height (ft)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Apl-gL-GFk">
+                                <rect key="frame" x="94" y="106" width="141" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Inseam (inches)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gHj-ZE-nhn">
+                                <rect key="frame" x="94" y="134" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X0E-sP-nE4">
+                                <rect key="frame" x="245" y="102" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="8fU-Ke-bWE"/>
+                                    <constraint firstAttribute="width" constant="50" id="vxT-Yd-nax"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVc-hy-tEb">
+                                <rect key="frame" x="245" y="131" width="50" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="gD2-Hm-FPZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="giraffe" translatesAutoresizingMaskIntoConstraints="NO" id="qZD-AE-Osh">
+                                <rect key="frame" x="16" y="83" width="85" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="YQA-pD-y7v"/>
+                                    <constraint firstAttribute="height" constant="179" id="t7g-e5-AOX"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="You would be" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i2H-Le-3p5">
+                                <rect key="frame" x="102" y="183" width="128" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="cUX-d6-rr6"/>
+                                    <constraint firstAttribute="height" constant="21" id="lQx-lu-1Z9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=" " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3I-lR-8zA">
+                                <rect key="frame" x="221" y="183" width="43" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="ZeT-ys-aFq"/>
+                                    <constraint firstAttribute="height" constant="21" id="uEI-3h-tcU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="feet!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy3-A8-lZh">
+                                <rect key="frame" x="260" y="183" width="52" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="Xa6-RS-x9h"/>
+                                    <constraint firstAttribute="height" constant="21" id="q3m-Xg-AaL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.8404547870264294" blue="0.26717905810593412" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="i2H-Le-3p5" firstAttribute="top" secondItem="gy3-A8-lZh" secondAttribute="top" id="2UK-U9-tDV"/>
+                            <constraint firstItem="EoS-9f-ey0" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="2w1-VB-Zgh"/>
+                            <constraint firstItem="lVc-hy-tEb" firstAttribute="leading" secondItem="gHj-ZE-nhn" secondAttribute="trailing" constant="1" id="9sB-UA-oPd"/>
+                            <constraint firstItem="gHj-ZE-nhn" firstAttribute="leading" secondItem="i2H-Le-3p5" secondAttribute="leading" id="Aps-pA-6z4"/>
+                            <constraint firstItem="i2H-Le-3p5" firstAttribute="top" secondItem="l3I-lR-8zA" secondAttribute="top" id="Eci-3b-Hi0"/>
+                            <constraint firstItem="Oh9-Ym-F4P" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="86" id="Lmt-4H-avJ"/>
+                            <constraint firstItem="qZD-AE-Osh" firstAttribute="top" secondItem="EoS-9f-ey0" secondAttribute="bottom" constant="34" id="QKl-cy-9XD"/>
+                            <constraint firstItem="qZD-AE-Osh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="YGH-iC-Iak"/>
+                            <constraint firstItem="Oh9-Ym-F4P" firstAttribute="top" secondItem="EoS-9f-ey0" secondAttribute="bottom" constant="8" id="bgy-SM-N4A"/>
+                            <constraint firstItem="Apl-gL-GFk" firstAttribute="leading" secondItem="gHj-ZE-nhn" secondAttribute="leading" id="d14-B7-7A4"/>
+                            <constraint firstItem="gy3-A8-lZh" firstAttribute="leading" secondItem="i2H-Le-3p5" secondAttribute="trailing" constant="30" id="di1-T3-66E"/>
+                            <constraint firstItem="EoS-9f-ey0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="21" id="e9b-Em-U3j"/>
+                            <constraint firstItem="gHj-ZE-nhn" firstAttribute="top" secondItem="Apl-gL-GFk" secondAttribute="bottom" constant="7" id="eC7-yP-GO1"/>
+                            <constraint firstItem="lVc-hy-tEb" firstAttribute="top" secondItem="Oh9-Ym-F4P" secondAttribute="bottom" constant="53" id="hvm-bC-viy"/>
+                            <constraint firstItem="l3I-lR-8zA" firstAttribute="leading" secondItem="qZD-AE-Osh" secondAttribute="trailing" constant="120" id="jIK-Pl-YXC"/>
+                            <constraint firstItem="Apl-gL-GFk" firstAttribute="top" secondItem="Oh9-Ym-F4P" secondAttribute="bottom" constant="28" id="kSq-nU-ncg"/>
+                            <constraint firstItem="l3I-lR-8zA" firstAttribute="top" secondItem="gy3-A8-lZh" secondAttribute="top" id="mZd-Ru-OUN"/>
+                            <constraint firstItem="Oh9-Ym-F4P" firstAttribute="leading" secondItem="Apl-gL-GFk" secondAttribute="leading" id="q3e-gw-hCc"/>
+                            <constraint firstItem="lVc-hy-tEb" firstAttribute="leading" secondItem="X0E-sP-nE4" secondAttribute="leading" id="qEz-DM-P7O"/>
+                            <constraint firstItem="i2H-Le-3p5" firstAttribute="top" secondItem="gHj-ZE-nhn" secondAttribute="bottom" constant="28" id="sS4-ux-8f3"/>
+                            <constraint firstItem="X0E-sP-nE4" firstAttribute="top" secondItem="Oh9-Ym-F4P" secondAttribute="bottom" constant="24" id="ySF-BY-Yos"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gHeight" destination="l3I-lR-8zA" id="5lk-P3-MkQ"/>
+                        <outlet property="height" destination="X0E-sP-nE4" id="ciJ-NB-Ujq"/>
+                        <outlet property="seam" destination="lVc-hy-tEb" id="4Em-c0-hHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="giraffe" width="62" height="195"/>
+    </resources>
+</document>
