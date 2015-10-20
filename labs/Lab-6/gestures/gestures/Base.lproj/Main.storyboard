@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green" translatesAutoresizingMaskIntoConstraints="NO" id="9Cb-YM-ffA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dog" translatesAutoresizingMaskIntoConstraints="NO" id="Fzo-go-Lmz">
+                                <rect key="frame" x="24" y="34" width="200" height="211"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="AgB-WT-MPM" appends="YES" id="3hV-Mw-JGa"/>
+                                    <outletCollection property="gestureRecognizers" destination="gd5-pf-eCw" appends="YES" id="XJ9-7w-h1e"/>
+                                    <outletCollection property="gestureRecognizers" destination="mWz-Ye-EgI" appends="YES" id="gZP-E9-x3s"/>
+                                    <outletCollection property="gestureRecognizers" destination="wES-Sa-vps" appends="YES" id="I0w-8m-Dxv"/>
+                                </connections>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="9Cb-YM-ffA" secondAttribute="bottom" id="0tV-Cx-DRu"/>
+                            <constraint firstItem="9Cb-YM-ffA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="5CE-yT-b4G"/>
+                            <constraint firstItem="9Cb-YM-ffA" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="Kni-9R-ojj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9Cb-YM-ffA" secondAttribute="trailing" constant="-16" id="M7d-8u-h0D"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="AgB-WT-MPM">
+                    <connections>
+                        <action selector="handlePan:" destination="vXZ-lx-hvc" id="J7l-Mg-rOA"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="e40-t0-jkX"/>
+                    </connections>
+                </panGestureRecognizer>
+                <pinchGestureRecognizer id="gd5-pf-eCw">
+                    <connections>
+                        <action selector="handlePinch:" destination="vXZ-lx-hvc" id="Zwe-w8-s4c"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="qgv-7N-5ze"/>
+                    </connections>
+                </pinchGestureRecognizer>
+                <rotationGestureRecognizer id="mWz-Ye-EgI">
+                    <connections>
+                        <action selector="handleRotate:" destination="vXZ-lx-hvc" id="nkS-yU-XfI"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="VFy-ks-nOb"/>
+                    </connections>
+                </rotationGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="wES-Sa-vps">
+                    <connections>
+                        <action selector="HandleLongPress:" destination="vXZ-lx-hvc" id="POq-7A-8y0"/>
+                        <outlet property="delegate" destination="vXZ-lx-hvc" id="Ylc-vS-6aZ"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dog" width="200" height="211"/>
+        <image name="green" width="610" height="250"/>
+    </resources>
+</document>
