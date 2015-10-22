@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Recorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.49999999999999961" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="mic" translatesAutoresizingMaskIntoConstraints="NO" id="eh7-ko-yPM">
+                                <rect key="frame" x="8" y="0.0" width="378" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tfJ-Qu-IFn">
+                                <rect key="frame" x="171" y="181" width="73" height="32"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="Stop">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="stopAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="djg-UD-C0G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDI-lp-CAS">
+                                <rect key="frame" x="179" y="254" width="56" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="Play">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jJP-Yj-vAH"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="record" translatesAutoresizingMaskIntoConstraints="NO" id="U67-I8-0T5">
+                                <rect key="frame" x="134" y="114" width="22" height="21"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="stop" translatesAutoresizingMaskIntoConstraints="NO" id="Wqk-e2-0Kj">
+                                <rect key="frame" x="136" y="185" width="26" height="24"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="play" translatesAutoresizingMaskIntoConstraints="NO" id="vcf-So-g5E">
+                                <rect key="frame" x="137" y="255" width="29" height="27"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gi-52-Qer">
+                                <rect key="frame" x="157" y="110" width="115" height="30"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="27"/>
+                                <size key="titleShadowOffset" width="2" height="0.0"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZtE-NH-Dbj"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Recorder!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="udu-PK-EV3">
+                                <rect key="frame" x="122" y="46" width="171" height="43"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="highlightedColor" red="0.96253563413273935" green="0.9062679459408588" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <size key="shadowOffset" width="2" height="-1"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3gi-52-Qer" firstAttribute="top" secondItem="udu-PK-EV3" secondAttribute="bottom" constant="2" id="3My-8O-ISs"/>
+                            <constraint firstAttribute="centerX" secondItem="eh7-ko-yPM" secondAttribute="centerX" id="D9P-0t-hzJ"/>
+                            <constraint firstItem="tfJ-Qu-IFn" firstAttribute="leading" secondItem="3gi-52-Qer" secondAttribute="leading" id="DyH-YP-wcu"/>
+                            <constraint firstItem="3gi-52-Qer" firstAttribute="leading" secondItem="U67-I8-0T5" secondAttribute="trailing" constant="1" id="Gbx-My-Uoj"/>
+                            <constraint firstItem="tfJ-Qu-IFn" firstAttribute="leading" secondItem="3gi-52-Qer" secondAttribute="leading" id="JQk-nN-Uxt"/>
+                            <constraint firstAttribute="centerX" secondItem="udu-PK-EV3" secondAttribute="centerX" id="NSD-JT-biO"/>
+                            <constraint firstItem="vcf-So-g5E" firstAttribute="top" secondItem="Wqk-e2-0Kj" secondAttribute="bottom" constant="16" id="Raq-GA-XHN"/>
+                            <constraint firstItem="U67-I8-0T5" firstAttribute="leading" secondItem="vcf-So-g5E" secondAttribute="leading" id="W4l-4D-h19"/>
+                            <constraint firstItem="U67-I8-0T5" firstAttribute="leading" secondItem="udu-PK-EV3" secondAttribute="leading" id="Xwm-j4-TMS"/>
+                            <constraint firstItem="U67-I8-0T5" firstAttribute="top" secondItem="udu-PK-EV3" secondAttribute="bottom" constant="10" id="agr-YZ-YtA"/>
+                            <constraint firstItem="eh7-ko-yPM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="5" id="bNR-y7-zQi"/>
+                            <constraint firstItem="Wqk-e2-0Kj" firstAttribute="top" secondItem="3gi-52-Qer" secondAttribute="bottom" constant="10" id="ba5-Nv-f4T"/>
+                            <constraint firstItem="tfJ-Qu-IFn" firstAttribute="leading" secondItem="fDI-lp-CAS" secondAttribute="leading" id="cBY-Rb-JiO"/>
+                            <constraint firstItem="fDI-lp-CAS" firstAttribute="top" secondItem="tfJ-Qu-IFn" secondAttribute="bottom" constant="1" id="cBd-8j-288"/>
+                            <constraint firstItem="U67-I8-0T5" firstAttribute="leading" secondItem="Wqk-e2-0Kj" secondAttribute="leading" id="cRX-LT-5xb"/>
+                            <constraint firstItem="udu-PK-EV3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="26" id="e15-kZ-KPp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="eh7-ko-yPM" secondAttribute="bottom" constant="5" id="m10-Vd-mOA"/>
+                            <constraint firstItem="tfJ-Qu-IFn" firstAttribute="top" secondItem="3gi-52-Qer" secondAttribute="bottom" id="wJy-Am-thc"/>
+                            <constraint firstItem="tfJ-Qu-IFn" firstAttribute="leading" secondItem="fDI-lp-CAS" secondAttribute="leading" id="zgz-xP-Zro"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playButton" destination="fDI-lp-CAS" id="vn2-t2-ecE"/>
+                        <outlet property="recordButton" destination="3gi-52-Qer" id="6D1-GE-jtQ"/>
+                        <outlet property="stopButton" destination="tfJ-Qu-IFn" id="zAD-iF-yUZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mic" width="380" height="600"/>
+        <image name="play" width="30" height="30"/>
+        <image name="record" width="30" height="30"/>
+        <image name="stop" width="30" height="30"/>
+    </resources>
+</document>
