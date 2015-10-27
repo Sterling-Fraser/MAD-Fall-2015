@@ -59,7 +59,7 @@
                                     <rect key="frame" x="385" y="270" width="60" height="30"/>
                                 </variation>
                                 <connections>
-                                    <segue destination="FFd-8l-jQH" kind="modal" id="Bvq-kJ-QTF"/>
+                                    <segue destination="FFd-8l-jQH" kind="presentation" id="Bvq-kJ-QTF"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ready to learn more?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGn-kJ-C4u">
@@ -232,7 +232,7 @@
                                 </state>
                                 <connections>
                                     <action selector="Home:" destination="FFd-8l-jQH" eventType="touchUpInside" id="ez1-pm-Y1T"/>
-                                    <segue destination="vXZ-lx-hvc" kind="modal" modalTransitionStyle="crossDissolve" id="Bjm-94-yi9"/>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="Bjm-94-yi9"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Red Rocks Ampitheatre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6M-sS-JR8">
