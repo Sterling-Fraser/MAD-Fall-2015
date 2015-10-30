@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Favorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.39999999999999963" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJb-tY-7e7">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="dGi-4M-HSR"/>
+                                    <barButtonItem title="Info" id="yu1-iR-Yeg">
+                                        <connections>
+                                            <segue destination="IxZ-Xp-eia" kind="presentation" identifier="favInfo" modalTransitionStyle="coverVertical" id="fRL-R2-be3"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="1" green="0.86657495770000004" blue="0.1419232373" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Favorites" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMz-0h-waX">
+                                <rect key="frame" x="193" y="41" width="215" height="40"/>
+                                <fontDescription key="fontDescription" name="Superclarendon-Regular" family="Superclarendon" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.1077069397" blue="0.18686158429999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="EJb-tY-7e7" secondAttribute="trailing" constant="-16" id="0dI-QN-rpe"/>
+                            <constraint firstItem="EJb-tY-7e7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="11d-4J-PxA"/>
+                            <constraint firstAttribute="centerX" secondItem="bMz-0h-waX" secondAttribute="centerX" id="qIy-BF-lph"/>
+                            <constraint firstItem="bMz-0h-waX" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="33" id="scg-2L-v5u"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="EJb-tY-7e7" secondAttribute="bottom" id="vYs-Dr-9kP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Scene2 View Controller-->
+        <scene sceneID="xcU-gr-tUI">
+            <objects>
+                <viewController id="IxZ-Xp-eia" customClass="scene2ViewController" customModule="Favorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ce1-PX-2DY"/>
+                        <viewControllerLayoutGuide type="bottom" id="fto-Jt-8f9"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.44999999999999962" contentMode="scaleToFill" id="vHE-wc-zNI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="udF-tg-mTu">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="51d-fv-4QL"/>
+                                    <barButtonItem title="Done" id="XSt-hV-jsg"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" red="1" green="0.86657495770000004" blue="0.1419232373" alpha="1" colorSpace="calibratedRGB"/>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXk-yR-wWt">
+                                <rect key="frame" x="207" y="28" width="186" height="51"/>
+                                <fontDescription key="fontDescription" name="Superclarendon-Regular" family="Superclarendon" pointSize="34"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.1077069397" blue="0.18686158429999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="PXk-yR-wWt" secondAttribute="centerX" id="HdB-Np-Q5U"/>
+                            <constraint firstItem="udF-tg-mTu" firstAttribute="leading" secondItem="vHE-wc-zNI" secondAttribute="leadingMargin" constant="-16" id="VUS-t7-hPm"/>
+                            <constraint firstItem="PXk-yR-wWt" firstAttribute="top" secondItem="Ce1-PX-2DY" secondAttribute="bottom" constant="8" id="c7j-Sk-Olk"/>
+                            <constraint firstItem="fto-Jt-8f9" firstAttribute="top" secondItem="udF-tg-mTu" secondAttribute="bottom" id="h1f-Ec-MA8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="udF-tg-mTu" secondAttribute="trailing" constant="-16" id="pMj-xg-L1x"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ew7-IT-EQ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1117" y="352"/>
+        </scene>
+    </scenes>
+</document>
