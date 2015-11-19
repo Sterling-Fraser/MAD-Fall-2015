@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity"
+    android:background="#efe188"
+    >
+<!--textView for How are you feeling?-->
+    <TextView
+        android:text="@string/text_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#071436"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:id="@+id/textView"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:id="@+id/linear1">
+        <!--text goes between layout tags-->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/name_edit"
+            android:id="@+id/name_edit"
+            android:layout_weight="1"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="@string/toggle_on"
+            android:textOff="@string/toggle_off"
+            android:id="@+id/energy_toggle"
+            android:checked="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear3"
+        android:layout_below="@+id/linear2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/yoga_text"
+            android:layout_weight="1"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="8dp"/>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/yoga_type"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yoga1_radio"
+                    android:id="@+id/radioButton1"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yoga2_radio"
+                    android:id="@+id/radioButton2"
+                    android:layout_weight="1"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yoga3_radio"
+                    android:id="@+id/radioButton3"
+                    android:layout_weight="1"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear1"
+        android:id="@+id/linear2"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp">
+
+    <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:entries="@array/moods"
+            android:layout_weight="1"
+     />
+    <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/meditate_switch"
+            android:id="@+id/switch1"
+            android:width="110dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+     />
+    </LinearLayout>
+
+<!--button to trigger label change    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/linear5"
+        android:id="@+id/linear6"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        >
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mood_button"
+        android:id="@+id/button"
+        android:layout_marginTop="10dp"
+
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#071436"
+        android:background="#d0fcfc"
+
+        android:onClick="findMood"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/linear3"
+        android:id="@+id/linear4">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sarcastic_check"
+            android:id="@+id/checkBox1"
+            android:layout_weight="1"
+            android:checked="false" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/conservative_check"
+            android:id="@+id/checkBox2"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear4"
+        android:id="@+id/linear5">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/secretive_check"
+            android:id="@+id/checkBox3"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enlightened_check"
+            android:id="@+id/checkBox4"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linear7"
+    android:layout_below="@+id/linear6">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/mood_image"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/feeling"
+        android:id="@+id/feelingText"
+        android:layout_below="@+id/linear6"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-light"
+        android:textStyle="normal"
+        android:textSize="20sp"
+        android:textColor="#071436"
+        android:layout_weight="1"
+        />
+</LinearLayout>
+
+<!--textView that will hold name and mood at end    -->
+
+
+</RelativeLayout>
