@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mustachio</string>
+    <string name="title">Selector Bigote</string>
+    <string name="pickerTitle">Elija Su Estilo</string>
+    <string name="pickButton">Elige Uno</string>
+    <string-array name="must">
+        <item>Apuesto</item>
+        <item>Occidental</item>
+        <item>Tradicional</item>
+        <item>Inigo Montoya</item>
+        <item>Jardín De Infancia</item>
+    </string-array>
+</resources>
