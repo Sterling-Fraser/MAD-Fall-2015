@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Mustachio</string>
+    <string name="title">Mustache Picker</string>
+    <string name="pickerTitle">Choose Your Style</string>
+    <string name="pickButton">Mustache you a Question?</string>
+    <string-array name="must">
+        <item>Dapper</item>
+        <item>Western</item>
+        <item>Traditional</item>
+        <item>Inigo Montoya</item>
+        <item>Kindergartener</item>
+    </string-array>
+</resources>

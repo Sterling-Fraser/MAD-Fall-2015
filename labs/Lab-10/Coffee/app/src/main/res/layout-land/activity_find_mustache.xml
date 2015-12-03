@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".FindMustacheActivity"
+    android:background="#282828">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/linear1"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="15dp"
+>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:id="@+id/titleText"
+        android:textSize="35sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#f7efef"
+     />
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear2"
+        android:layout_below="@+id/linear1"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pickerTitle"
+        android:id="@+id/crowdTitle"
+        android:textSize="22sp"
+        android:fontFamily="serif"
+        android:textColor="#f7efef"
+        />
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear3"
+        android:layout_below="@+id/linear2"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+    >
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:textColor="#f7efef"
+        android:entries="@array/must"
+        />
+</LinearLayout>
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear4"
+        android:layout_below="@+id/linear3"
+        android:gravity="center"
+>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pickButton"
+        android:id="@+id/coffeeButton"
+        android:onClick="findMustache"
+        android:textSize="16sp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="#f7efef"
+        android:background="#808080"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        />
+</LinearLayout>
+
+</RelativeLayout>
