@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Sterling-Fraser-Final</string>
+    <string name="heading">Build My Pizza</string>
+    <string name="button">Pizza Me!</string>
+    <string name="hintIt">Pizza Name</string>
+
+    <string name="toggle_on">White Sauce</string>
+    <string name="toggle_off">Red Sauce</string>
+
+    <string name="crust_type">Crust</string>
+    <string name="crust1_radio">Thin</string>
+    <string name="crust2_radio">Thick</string>
+
+    <string name="pep_check">Pepperoni</string>
+    <string name="mush_check">Mushroom</string>
+    <string name="onion_check">Onions</string>
+    <string name="saus_check">Sausage</string>
+
+    <string-array name="sizes">
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>jumbo</item>
+    </string-array>
+
+    <string name="gluten_switch">Gluten Free?</string>
+
+</resources>
