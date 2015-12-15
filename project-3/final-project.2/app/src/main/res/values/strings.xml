@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">The Utilities Utility</string>
+    <string name="stringTitle">Let\'s Get Started Shall We?</string>
+    <string name="roommate">No. of Roommates</string>
+    <string name="hint1">#</string>
+    <string name="rent">Rent Total</string>
+    <string name="hint2">$</string>
+    <string name="electric">Electricity Total</string>
+    <string name="hint3">$</string>
+    <string name="gas">Gas Total</string>
+    <string name="hint4">$</string>
+    <string name="trash">Trash Total</string>
+    <string name="hint5">$</string>
+    <string name="internet">Internet/TV Total</string>
+    <string name="hint6">$</string>
+    <string name="other">Other</string>
+    <string name="hint7">$</string>
+    <string name="submit">Submit</string>
+</resources>
